@@ -7,3 +7,6 @@ augmented with the standard distributed Debian package for JAGS
 https://tracker.debian.org/pkg/jags
 The rjags and coda packages get pre-installed into this by the
 mechanism that Rocker likes to use (install2.r).
+
+Usage is similar to the base image, for example
+docker run -e PASSWORD=donotshootthealbatross -v $(pwd):/home/rstudio --rm -p 8787:8787 mmunro/ltrr-tidyverse-jags:0.1.1
